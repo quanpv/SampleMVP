@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">bicycle</string>
+
+    <string name="error_not_connected_to_network">Error Network</string>
+    <string name="facebook_app_id">203346416927583</string>
+    <string name="fb_login_protocol_scheme">fb[APP_ID]</string>
+</resources>
