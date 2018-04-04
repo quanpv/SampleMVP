@@ -11,6 +11,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
+
             android:orientation="vertical">
 
             <com.facebook.login.widget.LoginButton
@@ -18,17 +19,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginLeft="60dp"
-                android:layout_marginRight="60dp" />
+                android:layout_marginLeft="@dimen/dimen60"
+                android:layout_marginRight="@dimen/dimen60" />
 
             <com.twitter.sdk.android.core.identity.TwitterLoginButton
                 android:id="@+id/login_button_twitter"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginLeft="60dp"
-                android:layout_marginRight="60dp"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginLeft="@dimen/dimen60"
+                android:layout_marginRight="@dimen/dimen60"
+                android:layout_marginTop="@dimen/dimen20"/>
 
         </LinearLayout>
 
