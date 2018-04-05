@@ -1,5 +1,6 @@
 package jp.com.javis.bicycle;
 
+import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
@@ -22,6 +23,15 @@ public class MainActivity extends AppCompatActivity {
         tx.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
         tx.addToBackStack(null);
         tx.commit();
+
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        // for twitter
+        LoginFragment loginFragment = (LoginFragment) getSupportFragmentManager().findFragmentById(R.id.container);
+        loginFragment.onActivityResult(requestCode, resultCode, data);
 
     }
 
